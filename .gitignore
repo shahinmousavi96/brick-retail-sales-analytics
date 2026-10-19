@@ -1,0 +1,11 @@
+# Power BI local files (machine-specific settings and data cache)
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+
+# OS files
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Python
+__pycache__/

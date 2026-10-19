@@ -1,0 +1,432 @@
+{
+  "compatibilityLevel": 1606,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"SqlServer\", \"vw_SalesLines\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "SqlServer",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ],
+        "expression": "\"localhost\\SQLEXPRESS\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+        "kind": "m",
+        "lineageTag": "d4c6c7f2-8b85-468f-963b-7911e733e39d"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "94437129-c013-7db8-4f8b-3528908792cc",
+        "fromColumn": "OrderDate",
+        "fromTable": "vw_SalesLines",
+        "toColumn": "Date",
+        "toTable": "Date"
+      }
+    ],
+    "sourceQueryCulture": "en-GB",
+    "tables": [
+      {
+        "name": "vw_SalesLines",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "OrderItemID",
+            "dataType": "int64",
+            "lineageTag": "f4f8dc22-1be8-4dac-a090-f3af02e2da62",
+            "sourceColumn": "OrderItemID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OrderID",
+            "dataType": "int64",
+            "lineageTag": "b92c62d4-9195-4350-b64c-72e386b1c708",
+            "sourceColumn": "OrderID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OrderDate",
+            "annotations": [
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "dd.mm.yyyy",
+            "lineageTag": "c546ed44-bad8-413e-97b2-c2dad2f7ecda",
+            "sourceColumn": "OrderDate",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OrderYear",
+            "dataType": "int64",
+            "lineageTag": "1f2f7bb1-9951-495e-a7f9-e6ef1394437a",
+            "sourceColumn": "OrderYear",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OrderMonth",
+            "dataType": "int64",
+            "lineageTag": "77eef432-bbd2-44b9-8fb9-ee767bfcac70",
+            "sourceColumn": "OrderMonth",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MonthStart",
+            "annotations": [
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "dd.mm.yyyy",
+            "lineageTag": "019260ab-0b80-4af6-a9ae-98080a35cc52",
+            "sourceColumn": "MonthStart",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OrderStatus",
+            "dataType": "string",
+            "lineageTag": "eb9c52f6-aa73-4f8c-a96b-f56bccd5e5b0",
+            "sourceColumn": "OrderStatus",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StoreID",
+            "dataType": "int64",
+            "lineageTag": "b0044192-0058-4bfb-97c3-6790d1eacb19",
+            "sourceColumn": "StoreID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StoreName",
+            "dataType": "string",
+            "lineageTag": "0edb89dd-5d43-425d-80af-d171bb3bca1c",
+            "sourceColumn": "StoreName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ChannelName",
+            "dataType": "string",
+            "lineageTag": "7b3c149b-6135-4748-91c6-4cef1d090385",
+            "sourceColumn": "ChannelName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CustomerID",
+            "dataType": "int64",
+            "lineageTag": "194d3056-e7e5-45c1-b2f9-fe5f15f12278",
+            "sourceColumn": "CustomerID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "IsInsider",
+            "dataType": "boolean",
+            "lineageTag": "d6d364b1-3665-4c50-a5c5-e4bb2e501e4f",
+            "sourceColumn": "IsInsider",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SetNum",
+            "dataType": "string",
+            "lineageTag": "1fc44d68-b691-4b75-b3ac-cf5d29a45ef9",
+            "sourceColumn": "SetNum",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductName",
+            "dataType": "string",
+            "lineageTag": "6ee420c0-7e40-434a-b171-8f4ad57d819a",
+            "sourceColumn": "ProductName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductLine",
+            "dataType": "string",
+            "lineageTag": "8fe1d12d-37cd-458a-b7ef-2cac96d0fb73",
+            "sourceColumn": "ProductLine",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "IsLicensed",
+            "dataType": "boolean",
+            "lineageTag": "8dc35d58-0e5e-4f6e-bf1e-bb715fcfc7b2",
+            "sourceColumn": "IsLicensed",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ReleaseYear",
+            "dataType": "int64",
+            "lineageTag": "cc2b63ca-8d13-4314-ab5f-2c16877ffe8c",
+            "sourceColumn": "ReleaseYear",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Quantity",
+            "dataType": "int64",
+            "lineageTag": "c02ce5c1-7278-475a-8ee2-d3f591804638",
+            "sourceColumn": "Quantity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ListPrice",
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "0f0b0b6b-b3aa-4117-9226-d51acf13e01c",
+            "sourceColumn": "ListPrice",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DiscountPct",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "7ff30f80-46c4-4791-bc85-eb152698e9aa",
+            "sourceColumn": "DiscountPct",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NetRevenue",
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "abf51037-9e28-42c4-8bf2-1f891fccc75f",
+            "sourceColumn": "NetRevenue",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CostAmount",
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "8488c6a7-1a57-4c51-b480-5d496d604c99",
+            "sourceColumn": "CostAmount",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "GrossProfit",
+            "dataType": "double",
+            "formatString": "#,0.00",
+            "lineageTag": "32432a61-df4c-4084-ac24-78047a5a5fa6",
+            "sourceColumn": "GrossProfit",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Price Segment",
+            "dataType": "string",
+            "expression": "SWITCH ( TRUE (), vw_SalesLines[ListPrice] < 30, \"1 Budget (<30)\", vw_SalesLines[ListPrice] < 100, \"2 Mid (30-99)\", \"3 Premium (100+)\" )",
+            "isDataTypeInferred": true,
+            "lineageTag": "3681858f-4e86-4f83-a1e0-1efd4f7d0f40",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Customer Type",
+            "dataType": "string",
+            "expression": "SWITCH ( TRUE (), vw_SalesLines[ChannelName] = \"Retail Partner\", \"Retail partner (B2B)\", ISBLANK ( vw_SalesLines[CustomerID] ), \"Walk-in (anonymous)\", vw_SalesLines[IsInsider], \"Insider member\", \"Registered, non-member\" )",
+            "isDataTypeInferred": true,
+            "lineageTag": "1f048abf-d056-42d8-9ec2-75b391d53393",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "74ede255-04bf-4e77-b7fb-c6b0c69097bf",
+        "measures": [
+          {
+            "name": "Revenue",
+            "expression": "CALCULATE ( SUM ( vw_SalesLines[NetRevenue] ), vw_SalesLines[OrderStatus] = \"Completed\" )",
+            "formatString": "\\€ #,0",
+            "lineageTag": "8e573333-4f57-428b-9686-09afb634ae6b"
+          },
+          {
+            "name": "Gross Profit",
+            "expression": "CALCULATE ( SUM ( vw_SalesLines[GrossProfit] ), vw_SalesLines[OrderStatus] = \"Completed\" )",
+            "formatString": "\\€ #,0",
+            "lineageTag": "ee6bc691-6b8f-4ecb-90c2-fcd9af79c951"
+          },
+          {
+            "name": "Margin %",
+            "expression": "DIVIDE ( [Gross Profit], CALCULATE ( SUM ( vw_SalesLines[NetRevenue] ), vw_SalesLines[OrderStatus] = \"Completed\", NOT ISBLANK ( vw_SalesLines[CostAmount] ) ) )",
+            "formatString": "0.0%",
+            "lineageTag": "a21cb484-f426-4e68-a154-22c07dd6d565"
+          },
+          {
+            "name": "Orders",
+            "expression": "CALCULATE ( DISTINCTCOUNT ( vw_SalesLines[OrderID] ), vw_SalesLines[OrderStatus] = \"Completed\" )",
+            "formatString": "#,0",
+            "lineageTag": "9e07f85f-0066-4489-8806-c2ab48c13706"
+          },
+          {
+            "name": "Units",
+            "expression": "CALCULATE ( SUM ( vw_SalesLines[Quantity] ), vw_SalesLines[OrderStatus] = \"Completed\" )",
+            "formatString": "#,0",
+            "lineageTag": "206655a6-530c-46b6-94cc-1ecfaea6b13f"
+          },
+          {
+            "name": "Avg Order Value",
+            "expression": "DIVIDE ( [Revenue], [Orders] )",
+            "formatString": "\\€ #,0.00",
+            "lineageTag": "3c273d8b-cdad-497d-971a-0612748bb8f0"
+          },
+          {
+            "name": "Revenue PY",
+            "expression": "CALCULATE ( [Revenue], SAMEPERIODLASTYEAR ( 'Date'[Date] ) )",
+            "formatString": "\\€ #,0",
+            "lineageTag": "5f73cb4b-7c8d-44b4-868b-47d354c7e387"
+          },
+          {
+            "name": "Revenue YoY %",
+            "expression": "IF ( HASONEVALUE ( 'Date'[Year] ), DIVIDE ( [Revenue] - [Revenue PY], [Revenue PY] ) )",
+            "formatString": "0.0%",
+            "lineageTag": "35242a73-e941-4f60-8df1-8b03e7bb3818"
+          },
+          {
+            "name": "Return Rate %",
+            "expression": "DIVIDE ( CALCULATE ( DISTINCTCOUNT ( vw_SalesLines[OrderID] ), vw_SalesLines[OrderStatus] = \"Returned\" ), DISTINCTCOUNT ( vw_SalesLines[OrderID] ) )",
+            "formatString": "0.0%",
+            "lineageTag": "03d4d081-ff43-489f-a628-eaea12826be2"
+          },
+          {
+            "name": "Revenue Top 10 Lines",
+            "expression": "VAR r = RANKX ( ALLSELECTED ( vw_SalesLines[ProductLine] ), [Revenue], , DESC, DENSE ) RETURN IF ( HASONEVALUE ( vw_SalesLines[ProductLine] ) && r <= 10, [Revenue] )",
+            "formatString": "\\€ #,0",
+            "lineageTag": "527c4ea2-fdab-495a-bc0e-f6d042f43200"
+          },
+          {
+            "name": "Avg Order Value Consumer",
+            "expression": "CALCULATE ( [Avg Order Value], vw_SalesLines[ChannelName] <> \"Retail Partner\" )",
+            "formatString": "\\€ #,0.00"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "vw_SalesLines",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(SqlServer, \"LegoSalesAnalytics\"),",
+                "    dbo_vw_SalesLines = Source{[Schema=\"dbo\",Item=\"vw_SalesLines\"]}[Data]",
+                "in",
+                "    dbo_vw_SalesLines"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Date",
+        "columns": [
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "formatString": "dd.mm.yyyy",
+            "isDataTypeInferred": true,
+            "isKey": true,
+            "isNameInferred": true,
+            "lineageTag": "c95c31d1-fa46-42e0-9b96-8b1b97605406",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "09c94908-a9e7-44c7-9168-5b8ea7c4f290",
+            "sourceColumn": "[Year]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Month No",
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "db8db5a4-25fe-4188-884f-347269522892",
+            "sourceColumn": "[Month No]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Month",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "b582118e-fb74-4a86-98ba-0afd40a40429",
+            "sortByColumn": "Month No",
+            "sourceColumn": "[Month]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year Month",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "e4b66788-a741-4910-bdd8-2cd70795cd3e",
+            "sourceColumn": "[Year Month]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Quarter",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "392ba6d0-9a8c-4672-a25b-fe331bfabcdc",
+            "sourceColumn": "[Quarter]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "dataCategory": "Time",
+        "lineageTag": "095fb6f2-3cfe-4286-be50-e0887ad64e37",
+        "partitions": [
+          {
+            "name": "Date",
+            "mode": "import",
+            "source": {
+              "expression": "ADDCOLUMNS ( CALENDAR ( DATE ( 2023, 1, 1 ), DATE ( 2025, 12, 31 ) ), \"Year\", YEAR ( [Date] ), \"Month No\", MONTH ( [Date] ), \"Month\", FORMAT ( [Date], \"MMM\" ), \"Year Month\", FORMAT ( [Date], \"YYYY-MM\" ), \"Quarter\", \"Q\" & QUARTER ( [Date] ) )",
+              "type": "calculated"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "6df56aa5a8b65e0748a8",
+  "position": {
+    "x": 520,
+    "y": 72,
+    "z": 5000,
+    "height": 110,
+    "width": 240
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_SalesLines"
+                    }
+                  },
+                  "Property": "Margin %"
+                }
+              },
+              "queryRef": "vw_SalesLines.Margin %"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

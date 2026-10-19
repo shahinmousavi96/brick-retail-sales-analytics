@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "d20c9474a9c5f4393f40",
+  "position": {
+    "x": 20,
+    "y": 684,
+    "z": 7000,
+    "height": 30,
+    "width": 1100
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Simulated sales data on the real Rebrickable catalog. Personal portfolio project. LEGO® is a trademark of the LEGO Group of companies, which does not sponsor, authorize or endorse this project.",
+                    "textStyle": {
+                      "fontSize": "9pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
